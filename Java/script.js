@@ -53,3 +53,13 @@ function toggleParagraph7(){
 }
 
 
+function toggleParagraph10(){
+    var description = document.getElementById("piece-description10"); 
+    description.classList.toggle("show"); 
+    console.log("current classes on description:", description.className); 
+}
+function toggleParagraph11(){
+    var description = document.getElementById("piece-description11"); 
+    description.classList.toggle("show"); 
+    console.log("current classes on description:", description.className); 
+}

@@ -9,7 +9,7 @@ body{
     right: 0; 
     width: 50vw;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(36, 36, 36);;
     z-index: -2;
 }
 h1{
@@ -52,362 +52,440 @@ h5{
 h2{
     text-align: left;
     position: absolute;
-    top: 1000%; 
+    top: 1500%; 
     right: 0; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
-    color:  lch(88.6% 22.6 65.12);
+    color:  rgb(241, 214, 245);
 }
 
 
 .gallery-layout{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding-right: 20%;
+    max-width: 1200px;
+    margin: 110vh auto 0 auto;
     position: relative;
-    margin-top: 100vh;
-    margin-left: 0%; 
-    min-height: 900px;
 }
 
 .ButtonP1{
+display: block;
 background: none;
 border: none; 
 padding: 0; 
+margin: 0;
 cursor: pointer; 
+width: 100%;
+height: 100%;
 position: relative;
 z-index: 2;
 }
 
 .Piece1 img{
-    width: 1000px;
-    height: 650px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
 }
 
 .Piece1{
-    width: 990px;
-    height: 1000px;
+    top: 2%; 
+    width: 100%;
+    max-width: 720px;
+    height: auto;
     overflow: hidden;
+    position: relative;
 }
 
 .description-box{
-    display: none;
-    width: 1450px;
-    height: 610px;
-    padding: 20px; 
+  display: none;
+    width: 430px; 
+    height: 1920px;
+    max-width: 800px;
+    padding: 2rem;
     background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
     position: absolute;
-    top: 0px; 
-    left: -10px; 
-    z-index: 1;
+    top:3%; 
+    left: 57%; 
+    z-index: 100;
 }
 .description-box header{
-    position: absolute;
     font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #piece-description.show{
     display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn 0.8s ease-in-out forwards;
 }
 @keyframes fadeIn{
-    0%{opacity: 0; transform: translateX(-100px);}
+    0%{opacity: 0; transform: translateX(-750px);}
     100%{opacity: 1; transform: translateX(0);}
 }
 
 
 
-.gallery-layout2{
-    position: relative;
-    margin-top: -20%;
-    margin-left: 0%; 
-    min-height: 900px;
-}
-.ButtonP2{
-background: none;
-border: none; 
-padding: 0; 
-cursor: pointer; 
-position: relative;
-z-index: 2;
-}
-.Piece2 img{
-    width: 1000px;
-    height: 650px;
-}
-.Piece2{
-    width: 1000px;
-    height: 1000px;
-    overflow: hidden;
-}
-
-.description-box2{
-    display: none;
-    width: 1450px;
-    height: 610px;
-    padding: 20px; 
-    background-color: white;
-    position: absolute;
-    top: 0px; 
-    left: -10px; 
-    z-index: 1;
-}
-.piece-description2 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
-}
-#piece-description2.show{
-    display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
-}
-
-
-
-
-.gallery-layout3{
-    position: relative;
-    margin-top: -20%;
-    margin-left: 0%; 
-    min-height: 900px;
-}
-.ButtonP3{
-background: none;
-border: none; 
-padding: 0; 
-cursor: pointer; 
-position: relative;
-z-index: 2;
-}
-.Piece3 img{
-     width: 1000px;
-    height: 650px;
-}
-.Piece3{
-     width: 990px;
-    height: 1000px;
-    overflow: hidden;
-}
-
-.description-box3{
-    display: none;
-    width: 1450px;
-    height: 610px;
-    padding: 20px; 
-    background-color: white;
-    position: absolute;
-    top: 0px; 
-    left: -10px; 
-    z-index: 1;
-}
-.piece-description3 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
-}
-#piece-description3.show{
-    display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
-}
-
-
-
-
-.gallery-layout4{
-   position: relative;
-    margin-top: -20%;
-    margin-left: 0%; 
-    min-height: 900px;
-}
-.ButtonP4{
-background: none;
-border: none; 
-padding: 0; 
-cursor: pointer; 
-position: relative;
-z-index: 2;
-}
-.Piece4 img{
-    width: 1000px;
-    height: 650px;
-}
-
-.Piece4{
-     width: 1000px;
-    height: 1000px;
-    overflow: hidden;
-}
-
-.description-box4{
-   display: none;
-    width: 1450px;
-    height: 610px;
-    padding: 20px; 
-    background-color: white;
-    position: absolute;
-    top: 0px; 
-    left: -10px; 
-    z-index: 1;
-}
-.piece-description4 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
-}
-#piece-description4.show{
-    display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
-}
 
 
 
 .gallery-layout5{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0.5rem;
+    max-width: 1200px;
+    margin-top: 20%;
     position: relative;
-    margin-top: 20vh;
-    margin-left: 1.8%; 
-    min-height: 900px;
 }
 .ButtonP5{
+display: block;
 background: none;
 border: none; 
 padding: 0; 
+margin: 0;
 cursor: pointer; 
+width: 300%;
+height: 100%;
 position: relative;
-z-index: 2;
+z-index: 100;
 }
 .Piece5 img{
-    width: 500px;
-    height: 745px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+
 }
 .Piece5{
-     width: 900px;
-    height: 900px;
+    width: 200%;
+    max-width: 700px;
+    margin-right: 50%;
+    height: auto;
     overflow: hidden;
+    position: relative;
 }
 
 .description-box5{
-   display: none;
-    width: 1450px;
-    height: 610px;
-    padding: 20px; 
+    display: none;
+    width: 430px; 
+    height: 400px;
+    max-width: 800px;
+    padding: 2rem;
     background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
     position: absolute;
-    top: 0px; 
-    left: -10px; 
-    z-index: 1;
+    top: 1%; 
+    left: 70%; 
+    z-index: 100;
 }
 .piece-description5 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
+   font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #piece-description5.show{
     display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn5 0.8s ease-in-out forwards;
 }
-
+@keyframes fadeIn5{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
 
 
 
 .gallery-layout6{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 20vh auto 0 5vh;
     position: relative;
-    margin-top: 20vh;
-    margin-left: 43.2%; 
-    min-height: 900px;
 }
+
 .ButtonP6{
+display: block;
 background: none;
 border: none; 
 padding: 0; 
+margin: 0;
 cursor: pointer; 
+width: 100%;
+height: 100%;
 position: relative;
 z-index: 2;
 }
+
 .Piece6 img{
-    width: 700px;
-    height: 550px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
 }
+
 .Piece6{
-     width: 900px;
-    height: 900px;
+    top: 2%; 
+    width: 100%;
+    max-width: 550px;
+    height: auto;
     overflow: hidden;
+    position: relative;
+    justify-self: end;
 }
 
 .description-box6{
     display: none;
-    width: 1450px;
-    height: 505px;
-    padding: 20px; 
+    width: 430px; 
+    height: 620px;
+    max-width: 800px;
+    padding: 2rem;
     background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
     position: absolute;
-    top: 0px; 
-    right: 0px; 
-    z-index: 1;
+    top: 6%; 
+    left: 57%; 
+    z-index: 100;
 }
-.piece-description6 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
+.description-box6 header{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #piece-description6.show{
     display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn6 0.8s ease-in-out forwards;
 }
-
+@keyframes fadeIn6{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
 
 
 .gallery-layout7{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 20vh auto 0 5vh;
     position: relative;
-    margin-top: -3%;
-    margin-left: -1.5%; 
-    min-height: 900px;
 }
+
 .ButtonP7{
+display: block;
 background: none;
 border: none; 
 padding: 0; 
+margin: 0;
 cursor: pointer; 
+width: 100%;
+height: 100%;
 position: relative;
 z-index: 2;
 }
+
 .Piece7 img{
-    width: 600px;
-    height: 550px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
 }
+
 .Piece7{
-     width: 900px;
-    height: 900px;
+    top: 2%; 
+    width: 100%;
+    max-width: 550px;
+    height: auto;
     overflow: hidden;
+    position: relative;
+    justify-self: end;
 }
 
 .description-box7{
     display: none;
-    width: 1450px;
-    height: 510px;
-    padding: 20px; 
+    width: 430px; 
+    height: 2450px;
+    max-width: 800px;
+    padding: 2rem;
     background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
     position: absolute;
-    top: 0px; 
-    right: 0px; 
-    z-index: 1;
+    top: 6%; 
+    left: 57%; 
+    z-index: 100;
 }
-.piece-description7 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
+.description-box7 header{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #piece-description7.show{
     display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn7 0.8s ease-in-out forwards;
+}
+@keyframes fadeIn7{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+
+.gallery-layout8{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 20vh auto 0 5vh;
+    position: relative;
+}
+
+.ButtonP8{
+display: block;
+background: none;
+border: none; 
+padding: 0; 
+margin: 0;
+width: 100%;
+height: 100%;
+position: relative;
+z-index: 2;
+}
+
+.Piece8 img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+}
+
+.Piece8{
+    top: -20%; 
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    justify-self: end;
+}
+
+.description-box8{
+    display: none;
+    width: 430px; 
+    height: 2450px;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
+    position: absolute;
+    top: 6%; 
+    left: 57%; 
+    z-index: 100;
+}
+.description-box8 header{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#piece-description8.show{
+    display: block !important;
+    animation: fadeIn8 0.8s ease-in-out forwards;
+}
+@keyframes fadeIn8{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+
+
+
+
+
+.gallery-layout11{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 15%;
+    position: relative;
+}
+.ButtonP11{
+display: block;
+background: none;
+border: none; 
+padding: 0; 
+margin: 0;
+cursor: pointer; 
+width: 100%;
+height: 100%;
+position: relative;
+z-index: 2;
+}
+.Piece11 img{
+   width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+}
+.Piece11{
+   width: 100%;
+    max-width: 600px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    justify-self: end;
+}
+
+.description-box11{
+ display: none;
+    width: 430px; 
+    height: 2230px;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
+    position: absolute;
+    top: 1.5%; 
+    left: 57%; 
+    z-index: 100;
+}
+.piece-description11 header{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#piece-description11.show{
+    display: block !important;
+    animation: fadeIn11 0.8s ease-in-out forwards;
+}
+@keyframes fadeIn11{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
 }

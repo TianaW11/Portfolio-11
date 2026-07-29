@@ -7,10 +7,11 @@ body{
     position: fixed;
     top: 0;
     right: 0; 
-    width: 50vw;
+    width: 48.5vw;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(36, 36, 36);
     z-index: -2;
+   
 }
 h1{
     text-align: left; 
@@ -61,352 +62,494 @@ h2{
 
 
 .gallery-layout{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 110vh auto 0 auto;
     position: relative;
-    margin-top: 100vh;
-    margin-left: 12.2%; 
-    min-height: 900px;
 }
 
 .ButtonP1{
+display: block;
 background: none;
 border: none; 
 padding: 0; 
+margin: 0;
 cursor: pointer; 
+width: 100%;
+height: 100%;
 position: relative;
 z-index: 2;
 }
 
 .Piece1 img{
-    width: 500px;
-    height: 750px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
 }
 
 .Piece1{
-    width: 600px;
-    height: 900px;
+    top: 2%; 
+    width: 100%;
+    max-width: 550px;
+    height: auto;
     overflow: hidden;
+    position: relative;
+    justify-self: end;
 }
 
 .description-box{
     display: none;
-    width: 1450px;
-    height: 710px;
-    padding: 20px; 
+    width: 430px; 
+    height: 750px;
+    max-width: 800px;
+    padding: 2rem;
     background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
     position: absolute;
-    top: 0px; 
-    left: -200px; 
-    z-index: 1;
+    top: 6%; 
+    left: 57%; 
+    z-index: 100;
 }
 .description-box header{
-    position: absolute;
     font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #piece-description.show{
     display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn 0.8s ease-in-out forwards;
 }
 @keyframes fadeIn{
-    0%{opacity: 0; transform: translateX(-100px);}
+    0%{opacity: 0; transform: translateX(-750px);}
     100%{opacity: 1; transform: translateX(0);}
 }
 
 
 
 .gallery-layout2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20%;
     position: relative;
-    margin-top: 10%;
-    margin-left: 47.6%; 
-    min-height: 900px;
 }
 .ButtonP2{
+display: block;
 background: none;
 border: none; 
 padding: 0; 
+margin: 0;
 cursor: pointer; 
+width: 100%;
+height: 100%;
 position: relative;
 z-index: 2;
 }
 .Piece2 img{
-    width: 530px;
-    height: 757px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
 }
 .Piece2{
-     width: 600px;
-    height: 900px;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    aspect-ratio: 2 / 3;
     overflow: hidden;
+    position: relative;
+    justify-self: end;
 }
 
 .description-box2{
     display: none;
-    width: 1450px;
-    height: 710px;
-    padding: 20px; 
+    width: 430px; 
+    height: 750px;
+    max-width: 800px;
+    padding: 2rem;
     background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
     position: absolute;
-    top: 5px; 
-    right: 0px; 
-    z-index: 1;
+    top: 4%; 
+    left: 57%; 
+    z-index: 100;
 }
 .piece-description2 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
+   font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #piece-description2.show{
     display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn2 0.8s ease-in-out forwards;
+}
+@keyframes fadeIn2{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
 }
 
 
 
 
 .gallery-layout3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20%;
     position: relative;
-    margin-top: 12%;
-    margin-left: 11%; 
-    min-height: 900px;
 }
 .ButtonP3{
+display: block;
 background: none;
 border: none; 
 padding: 0; 
+margin: 0;
 cursor: pointer; 
+width: 100%;
+height: 100%;
 position: relative;
 z-index: 2;
 }
 .Piece3 img{
-    width: 530px;
-    height: 745px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
 }
 .Piece3{
-     width: 600px;
-    height: 900px;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    aspect-ratio: 2 / 3;
     overflow: hidden;
+    position: relative;
+    justify-self: end;
 }
 
 .description-box3{
     display: none;
-    width: 1450px;
-    height: 710px;
-    padding: 20px; 
+    width: 430px; 
+    height: 750px;
+    max-width: 800px;
+    padding: 2rem;
     background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
     position: absolute;
-    top: 0px; 
-    right: 0px; 
-    z-index: 1;
+    top: 4%; 
+    left: 57%; 
+    z-index: 100;
 }
 .piece-description3 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #piece-description3.show{
     display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn3 0.8s ease-in-out forwards;
 }
-
+@keyframes fadeIn3{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
 
 
 
 .gallery-layout4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20%;
     position: relative;
-    margin-top: 12%;
-   margin-left: 47.6%; 
-    min-height: 900px;
 }
 .ButtonP4{
+display: block;
 background: none;
 border: none; 
 padding: 0; 
+margin: 0;
 cursor: pointer; 
+width: 100%;
+height: 100%;
 position: relative;
 z-index: 2;
 }
 .Piece4 img{
-    width: 530px;
-    height: 750px;
+  width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
 }
 .Piece4{
-     width: 600px;
-    height: 900px;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
     overflow: hidden;
+    position: relative;
+    justify-self: end;
 }
 
 .description-box4{
     display: none;
-    width: 1450px;
-    height: 710px;
-    padding: 20px; 
+    width: 430px; 
+    height: 660px;
+    max-width: 800px;
+    padding: 2rem;
     background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
     position: absolute;
-    top: 0px; 
-    right: 0px; 
-    z-index: 1;
+    top: 4%; 
+    left: 57%; 
+    z-index: 100;
 }
 .piece-description4 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #piece-description4.show{
     display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn4 0.8s ease-in-out forwards;
 }
-
+@keyframes fadeIn4{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
 
 
 .gallery-layout5{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20%;
     position: relative;
-    margin-top: 20vh;
-    margin-left: 1.8%; 
-    min-height: 900px;
 }
 .ButtonP5{
+display: block;
 background: none;
 border: none; 
 padding: 0; 
+margin: 0;
 cursor: pointer; 
+width: 100%;
+height: 100%;
 position: relative;
 z-index: 2;
 }
 .Piece5 img{
-    width: 500px;
-    height: 745px;
+     width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
 }
 .Piece5{
-     width: 900px;
-    height: 900px;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    aspect-ratio: 2 / 3;
     overflow: hidden;
+    position: relative;
+    justify-self: end;
 }
 
 .description-box5{
     display: none;
-    width: 1450px;
-    height: 705px;
-    padding: 20px; 
+    width: 430px; 
+    height: 750px;
+    max-width: 800px;
+    padding: 2rem;
     background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
     position: absolute;
-    top: 0px; 
-    right: 0px; 
-    z-index: 1;
+    top: 4%; 
+    left: 57%; 
+    z-index: 100;
 }
 .piece-description5 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #piece-description5.show{
     display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn5 0.8s ease-in-out forwards;
 }
-
+@keyframes fadeIn5{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
 
 
 
 .gallery-layout6{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20%;
     position: relative;
-    margin-top: 20vh;
-    margin-left: 43.2%; 
-    min-height: 900px;
 }
 .ButtonP6{
+display: block;
 background: none;
 border: none; 
 padding: 0; 
+margin: 0;
 cursor: pointer; 
+width: 100%;
+height: 100%;
 position: relative;
 z-index: 2;
 }
 .Piece6 img{
-    width: 700px;
-    height: 550px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+
 }
 .Piece6{
-     width: 900px;
-    height: 900px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     overflow: hidden;
+    position: relative;
 }
 
 .description-box6{
     display: none;
-    width: 1450px;
-    height: 505px;
-    padding: 20px; 
+    width: 430px; 
+    height: 500px;
+    max-width: 800px;
+    padding: 2rem;
     background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
     position: absolute;
-    top: 0px; 
-    right: 0px; 
-    z-index: 1;
+    top: 2%; 
+    left: 57%; 
+    z-index: 100;
 }
 .piece-description6 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
+   font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #piece-description6.show{
     display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn6 0.8s ease-in-out forwards;
 }
-
+@keyframes fadeIn6{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
 
 
 .gallery-layout7{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20%;
     position: relative;
-    margin-top: -3%;
-    margin-left: -1.5%; 
-    min-height: 900px;
 }
 .ButtonP7{
+display: block;
 background: none;
 border: none; 
 padding: 0; 
+margin: 0;
 cursor: pointer; 
+width: 100%;
+height: 100%;
 position: relative;
 z-index: 2;
 }
 .Piece7 img{
-    width: 600px;
-    height: 550px;
+   width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
 }
 .Piece7{
-     width: 900px;
-    height: 900px;
+   width: 100%;
+    max-width: 600px;
+    height: auto;
     overflow: hidden;
+    position: relative;
+    justify-self: end;
 }
 
 .description-box7{
-    display: none;
-    width: 1450px;
-    height: 510px;
-    padding: 20px; 
+ display: none;
+    width: 430px; 
+    height: 555px;
+    max-width: 800px;
+    padding: 2rem;
     background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
     position: absolute;
-    top: 0px; 
-    right: 0px; 
-    z-index: 1;
+    top: 5%; 
+    left: 57%; 
+    z-index: 100;
 }
 .piece-description7 header{
-    position: absolute;
-    font-weight: bold; 
-    font-size: 30px;
-    margin-bottom: 10px;
-    right: 33%;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #piece-description7.show{
     display: block !important;
-    animation: fadeIn 0.4s ease-in-out forwards;
+    animation: fadeIn7 0.8s ease-in-out forwards;
+}
+@keyframes fadeIn7{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
 }
