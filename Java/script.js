@@ -11,11 +11,31 @@ function TPNav(){
         window.location.href ='TP.html'; 
     }, 150); 
 }
+function PHNav(){
+     document.body.style.backgroundColor= "rgb(179, 235, 255);"; 
+    setTimeout(function(){
+        window.location.href ='PH.html'; 
+    }, 150); 
+}
+function PTNav(){
+     document.body.style.backgroundColor= "rgb(235, 226, 178)"; 
+    setTimeout(function(){
+        window.location.href ='Paint.html'; 
+    }, 150); 
+}
+
+
 window.addEventListener('pageshow', function(event){
     if (event.persisted){
         document.body.style.backgroundColor = ''; 
     }
 })
+
+
+
+
+
+
 function toggleParagraph(){
     var description = document.getElementById("piece-description"); 
     description.classList.toggle("show"); 
