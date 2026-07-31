@@ -53,11 +53,11 @@ h5{
 h2{
     text-align: left;
     position: absolute;
-    top: 1000%; 
+    top: 2000%; 
     right: 0; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
-    color:  lch(88.6% 22.6 65.12);
+    color:   rgb(235, 226, 178);
 }
 
 
@@ -467,7 +467,7 @@ z-index: 2;
 .description-box6{
     display: none;
     width: 430px; 
-    height: 750px;
+    height: 1490px;
     max-width: 800px;
     padding: 2rem;
     background-color: white;
@@ -536,7 +536,7 @@ z-index: 2;
 .description-box7{
  display: none;
     width: 430px; 
-    height: 555px;
+    height: 650px;
     max-width: 800px;
     padding: 2rem;
     background-color: white;
@@ -545,7 +545,7 @@ z-index: 2;
     box-shadow: 20px 20px 0px lch(0% 0 0);
     border-radius: 5px;
     position: absolute;
-    top: 5%; 
+    top: 3%; 
     left: 57%; 
     z-index: 100;
 }
@@ -560,6 +560,286 @@ z-index: 2;
     animation: fadeIn7 0.8s ease-in-out forwards;
 }
 @keyframes fadeIn7{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+
+
+.gallery-layout8{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20%;
+    position: relative;
+}
+.ButtonP8{
+display: block;
+background: none;
+border: none; 
+padding: 0; 
+margin: 0;
+cursor: pointer; 
+width: 100%;
+height: 100%;
+position: relative;
+z-index: 2;
+}
+.Piece8 img{
+   width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+}
+.Piece8{
+   width: 100%;
+    max-width: 600px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    justify-self: end;
+}
+
+.description-box8{
+ display: none;
+    width: 430px; 
+    height: 650px;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
+    position: absolute;
+    top: 3%; 
+    left: 57%; 
+    z-index: 100;
+}
+.piece-description8 header{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#piece-description8.show{
+    display: block !important;
+    animation: fadeIn8 0.8s ease-in-out forwards;
+}
+@keyframes fadeIn8{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+
+
+.gallery-layout9{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20%;
+    position: relative;
+}
+.ButtonP9{
+display: block;
+background: none;
+border: none; 
+padding: 0; 
+margin: 0;
+cursor: pointer; 
+width: 100%;
+height: 100%;
+position: relative;
+z-index: 2;
+}
+.Piece9 img{
+   width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+}
+.Piece9{
+   width: 100%;
+    max-width: 600px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    justify-self: end;
+}
+
+.description-box9{
+ display: none;
+    width: 430px; 
+    height: 650px;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
+    position: absolute;
+    top: 3%; 
+    left: 57%; 
+    z-index: 100;
+}
+.piece-description9 header{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#piece-description9.show{
+    display: block !important;
+    animation: fadeIn9 0.8s ease-in-out forwards;
+}
+@keyframes fadeIn9{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+
+.gallery-layout10{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 50vh auto 0 auto;
+    padding-right: 30%;
+    position: relative;
+}
+
+.ButtonP10{
+display: block;
+background: none;
+border: none; 
+padding: 0; 
+margin: 0;
+cursor: pointer; 
+width: 100%;
+height: 100%;
+position: relative;
+z-index: 2;
+}
+
+.Piece10 img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+}
+
+.Piece10{
+    top: 2%; 
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    justify-self: end;
+}
+
+.description-box10{
+    display: none;
+    width: 430px; 
+    height: 480px;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
+    position: absolute;
+    top: 2%; 
+    left: 57%; 
+    z-index: 100;
+}
+.description-box10 header{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#piece-description10.show{
+    display: block !important;
+    animation: fadeIn10 0.8s ease-in-out forwards;
+}
+@keyframes fadeIn10{
+    0%{opacity: 0; transform: translateX(-750px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+
+.gallery-layout11{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 50vh auto 0 auto;
+    padding-right: 30%;
+    position: relative;
+}
+
+.ButtonP11{
+display: block;
+background: none;
+border: none; 
+padding: 0; 
+margin: 0;
+cursor: pointer; 
+width: 100%;
+height: 100%;
+position: relative;
+z-index: 2;
+}
+
+.Piece11 img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+}
+
+.Piece11{
+    top: 2%; 
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    justify-self: end;
+}
+
+.description-box11{
+    display: none;
+    width: 430px; 
+    height: 450px;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 0px lch(0% 0 0);
+    border-radius: 5px;
+    position: absolute;
+    top: 2%; 
+    left: 57%; 
+    z-index: 100;
+}
+.description-box11 header{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#piece-description11.show{
+    display: block !important;
+    animation: fadeIn11 0.8s ease-in-out forwards;
+}
+@keyframes fadeIn11{
     0%{opacity: 0; transform: translateX(-750px);}
     100%{opacity: 1; transform: translateX(0);}
 }

@@ -23,6 +23,19 @@ function PTNav(){
         window.location.href ='Paint.html'; 
     }, 150); 
 }
+function MODENav(){
+     document.body.style.backgroundColor= "rgb(205, 235, 195)"; 
+    setTimeout(function(){
+        window.location.href ='Mode.html'; 
+    }, 150); 
+}
+function MONAV(){
+     document.body.style.backgroundColor= "rgb(255, 208, 223)"; 
+    setTimeout(function(){
+        window.location.href ='Motion.html'; 
+    }, 150); 
+}
+
 
 
 window.addEventListener('pageshow', function(event){
@@ -33,6 +46,16 @@ window.addEventListener('pageshow', function(event){
 
 
 
+function AddParagraph3D(){
+    var description = document.getElementById("piece-description"); 
+    description.classList.add("show")
+    console.log("current classes on description:", description.className);
+}
+function AddParagraph3D2(){
+    var description = document.getElementById("piece-description2"); 
+    description.classList.add("show")
+    console.log("current classes on description:", description.className);
+}
 
 
 
@@ -68,6 +91,16 @@ function toggleParagraph6(){
 }
 function toggleParagraph7(){
     var description = document.getElementById("piece-description7"); 
+    description.classList.toggle("show"); 
+    console.log("current classes on description:", description.className); 
+}
+function toggleParagraph8(){
+    var description = document.getElementById("piece-description8"); 
+    description.classList.toggle("show"); 
+    console.log("current classes on description:", description.className); 
+}
+function toggleParagraph9(){
+    var description = document.getElementById("piece-description9"); 
     description.classList.toggle("show"); 
     console.log("current classes on description:", description.className); 
 }
