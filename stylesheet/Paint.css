@@ -2,6 +2,23 @@ body{
     background-color: rgb(235, 226, 178);
     overflow-x: hidden;
 }
+html{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html,
+body, 
+*, 
+*::before, 
+*::after{
+cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer !important;
+}
+
+.ButtonP1 :hover, .ButtonP2 :hover, .ButtonP3 :hover, .ButtonP4 :hover, .ButtonP5 :hover, .ButtonP6 :hover,  
+.ButtonP7 :hover, .ButtonP8 :hover, .ButtonP11 :hover, .ButtonP10 :hover, .ButtonP9 :hover{
+    outline: solid 10px black;
+}
 
 .black-square{
     position: fixed;
@@ -13,6 +30,61 @@ body{
     z-index: -2;
    
 }
+.container:hover .HomeHover{
+ opacity: 1;
+ z-index: 10;
+ transform: scale(1)
+}
+.container :active{
+   transform: scale(0.85);
+}
+
+.HomeHover{
+    position: fixed;
+    background: none;
+    border: none;
+    outline: none;
+    bottom: 90%; 
+    right: -0.5%;
+    opacity: 0;
+}
+.HomeButton{
+    position: fixed;
+    background: none;
+    border: none;
+    outline: none;
+    bottom: 90%; 
+    right: -0.5%;
+
+}
+.button3D{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background: none;
+    outline: none;
+    cursor: pointer;
+     position: absolute;
+    top: 1700%; 
+    right: 88.5%; 
+    font-size: 14px;
+    border: 1px solid rgb(0, 0, 0); 
+    border-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.button3D:hover{
+    background-color: rgb(205, 235, 195);
+    color: black;
+    transition: background-color 0.5s ease-in, transform 0.1s;
+    border: none; 
+}
+body:has(.button3D:hover){
+    background-color:  rgb(205, 235, 195);
+}
+.button3D:active{
+    transform: scale(0.90);
+}
+
 h1{
     text-align: left; 
     position: absolute;
@@ -53,7 +125,7 @@ h5{
 h2{
     text-align: left;
     position: absolute;
-    top: 2000%; 
+    top: 1700%; 
     right: 0; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;

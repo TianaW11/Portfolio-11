@@ -1,7 +1,21 @@
 body{
     background-color: lch(88.6% 22.6 65.12);
-    overflow-x: hidden;
+     cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer;
 }
+html{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer;
+}
+
+html,
+body, 
+*, 
+*::before, 
+*::after{
+cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer !important;
+}
+
 
 .black-square{
     position: fixed;
@@ -13,6 +27,64 @@ body{
     z-index: -2;
    
 }
+.container:hover .HomeHover{
+ opacity: 1;
+ z-index: 10;
+ transform: scale(1)
+}
+.container :active{
+   transform: scale(0.85);
+}
+
+.HomeHover{
+    position: fixed;
+    background: none;
+    border: none;
+    outline: none;
+    bottom: 90%; 
+    right: -0.5%;
+    opacity: 0;
+}
+.HomeButton{
+    position: fixed;
+    background: none;
+    border: none;
+    outline: none;
+    bottom: 90%; 
+    right: -0.5%;
+
+}
+
+.buttonTYPE{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background: none;
+    cursor: pointer;
+     position: absolute;
+    top: 1005%; 
+    right: 88.5%; 
+    font-size: 14px;
+    border: 1px solid black; 
+    border-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.buttonTYPE:hover{
+    background-color: rgb(241, 214, 245);
+    color: black;
+    transition: background-color 0.5s ease-in, transform 0.1s;
+    border: none; 
+}
+body:has(.buttonTYPE:hover){
+    background-color: rgb(241, 214, 245);
+}
+.buttonTYPE:active{
+    transform: scale(0.90);
+}
+
+
+
+
 h1{
     text-align: left; 
     position: absolute;
@@ -78,10 +150,14 @@ border: none;
 padding: 0; 
 margin: 0;
 cursor: pointer; 
-width: 100%;
+max-width: 100%;
 height: 100%;
 position: relative;
 z-index: 2;
+}
+.ButtonP1 :hover, .ButtonP2 :hover, .ButtonP3 :hover, .ButtonP4 :hover, .ButtonP5 :hover, .ButtonP6 :hover,  
+.ButtonP7 :hover{
+    outline: solid 10px black;
 }
 
 .Piece1 img{

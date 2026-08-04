@@ -7,9 +7,22 @@ html, body{
 
 
 body{
+   
     background-color: #ffffff;
     transition: background-color 0.2s ease-in-out;
+    cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer;
+
 }
+.buttonGD, .buttonGD:hover, body:has(.buttonGD:hover),.buttonGD:active, .buttonTYPE, .buttonTYPE:hover, body:has(.buttonTYPE:hover),.buttonTYPE:active,
+.buttonPH, .buttonPH:hover,  body:has(.buttonPH:hover), .buttonPH:active,
+.buttonPT, .buttonPT:active, .buttonPT:hover, .button3D, .button3D:active, .button3D:hover, 
+.buttonMO, .buttonMO:active, .buttonMO:hover{
+ cursor: url("../Elements/CursorDesignPort2.svg")  30 30 , auto !important;
+}
+
+    
+
+
 
 .button3D{
     padding: 10px;
@@ -27,7 +40,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 .button3D:hover{
-    background-color: rgb(205, 235, 195);
+    background-color: #cdebc3;
     color: black;
     transition: background-color 0.5s ease-in, transform 0.1s;
     border: none; 
@@ -56,7 +69,7 @@ body:has(.button3D:hover){
     font-family: 'Times New Roman', Times, serif;
 }
 .buttonMO:hover{
-    background-color: rgb(255, 208, 223);
+    background-color: #ffd0df;
     color: black;
     transition: background-color 0.5s ease-in, transform 0.1s;
     border: none; 
@@ -84,7 +97,7 @@ body:has(.buttonMO:hover){
     font-family: 'Times New Roman', Times, serif;
 }
 .buttonPT:hover{
-    background-color: rgb(235, 226, 178);
+    background-color: #ebe2b2;
     color: black;
     transition: background-color 0.5s ease-in, transform 0.1s;
     border: none; 
@@ -155,7 +168,7 @@ body:has(.buttonGD:hover){
     font-family: 'Times New Roman', Times, serif;
 }
 .buttonTYPE:hover{
-    background-color: rgb(241, 214, 245);
+    background-color: #f1d6f5;
     color: black;
     transition: background-color 0.5s ease-in, transform 0.1s;
     border: none; 
@@ -187,13 +200,13 @@ body:has(.buttonTYPE:hover){
     font-family: 'Times New Roman', Times, serif;
 }
 .buttonPH:hover{
-    background-color: rgb(179, 235, 255);
+    background-color: #b3ebff;
     color: black;
     transition: background-color 0.5s ease-in, transform 0.1s;
     border: none; 
 }
 body:has(.buttonPH:hover){
-    background-color: rgb(179, 235, 255);
+    background-color: #b3ebff;
 }
 .buttonPH:active{
     transform: scale(0.90);
@@ -267,7 +280,7 @@ h2{
 .loop-content{
     display: flex;
     width: max-content; 
-    animation: marquee 15s linear infinite;
+    animation: marquee 30s linear infinite;
 
    
     
@@ -311,7 +324,7 @@ h2{
 .loop-content2{
     display: flex;
     width: max-content; 
-    animation: marquee2 15s linear infinite;
+    animation: marquee2 30s linear infinite;
 }
 
 

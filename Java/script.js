@@ -116,3 +116,5 @@ function toggleParagraph11(){
     description.classList.toggle("show"); 
     console.log("current classes on description:", description.className); 
 }
+
+

@@ -2,7 +2,14 @@ body{
     background-color: rgb(255, 208, 223);
     overflow-x: hidden;
 }
-
+html{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0;
+padding: 0; 
+width: 100%;
+min-height: 1013vh;
+}
 .black-square{
     position: fixed;
     top: 0;
@@ -13,6 +20,79 @@ body{
     z-index: -2;
    
 }
+
+html,
+body, 
+head, 
+*, 
+*::before, 
+*::after{
+cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer !important;  
+}
+
+
+
+.container:hover .HomeHover{
+ opacity: 1;
+ z-index: 10;
+ transform: scale(1)
+}
+.container :active{
+   transform: scale(0.85);
+}
+
+.HomeHover{
+    position: fixed;
+    background: none;
+    border: none;
+    outline: none;
+    bottom: 90%; 
+    right: -0.5%;
+    opacity: 0;
+}
+.HomeButton{
+    position: fixed;
+    background: none;
+    border: none;
+    outline: none;
+    bottom: 90%; 
+    right: -0.5%;
+
+}
+
+
+
+.buttonGD{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1005%;
+    right: 88.5%; 
+    font-size: 14px;
+    border: 1px solid black; 
+    border-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.buttonGD:hover{
+    background-color: #ffd7b8;
+    color: black;
+    transition: background-color 0.5s ease-in, transform 0.1s;
+    border: none; 
+}
+body:has(.buttonGD:hover){
+    background-color: rgb(255, 215, 184);
+}
+
+
+.buttonGD:active{
+    transform: scale(0.90);
+    
+}
+
+
 h1{
     text-align: left; 
     position: absolute;
@@ -61,22 +141,20 @@ h2{
 }
 
 
-.video{
+video{
     position: absolute;
     top: 100%; 
      width: 50%;
     left: 1%; 
-    
+    cursor: url("../Elements/CursorDesignPort2.svg") 30 30, auto !important;
 }
-
-
 
 
 .Combination{
 position: absolute;
     top: 100%; 
     width: 100%;
-
+cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer !important;
 }
 .ButtonP1{
 background-color: rgb(254, 173, 199);
