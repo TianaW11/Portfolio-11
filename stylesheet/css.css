@@ -338,4 +338,20 @@ h2{
 }
 
 
+@media only screen and (max-width: 600px){
 
+h1, h2{
+    font-size: 20px;
+}
+.button3D, .buttonMO, .buttonPT{
+    left: 70%; 
+}
+.buttonGD, .buttonPH, .buttonTYPE{
+    right: 70%; 
+}
+
+
+
+
+
+}

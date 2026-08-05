@@ -629,3 +629,35 @@ z-index: 2;
     0%{opacity: 0; transform: translateX(-750px);}
     100%{opacity: 1; transform: translateX(0);}
 }
+
+
+@media only screen and (max-width: 600px){
+
+h3,h4, h5{
+    position: relative;
+    right: 60%; 
+    top: 30%; 
+}
+
+h2{
+    text-align: left;
+    position: absolute;
+    top: 1000%; 
+    right: 0; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color:  lch(88.6% 22.6 65.12);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
