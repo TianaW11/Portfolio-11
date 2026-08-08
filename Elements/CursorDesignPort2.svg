@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="23.055059"
-   height="21.759912"
+   width="30px"
+   height="30px"
    viewBox="0 0 23.055059 21.759912"
    version="1.1"
    xml:space="preserve"
@@ -54,4 +54,5 @@
    cx="11.475205"
    cy="12.884056"
    rx="1.6428448"
-   ry="1.6506611" /></svg>
+   ry="1.6506611" 
+   /></svg>

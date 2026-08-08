@@ -12,7 +12,7 @@ body,
 *, 
 *::before, 
 *::after{
-cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer !important;
+cursor: url("../Elements/CursorDesignPort2.svg") 16 16, pointer !important;
 }
 
 .ButtonP1 :hover, .ButtonP2 :hover, .ButtonP3 :hover, .ButtonP4 :hover, .ButtonP5 :hover, .ButtonP6 :hover,  
@@ -560,4 +560,142 @@ z-index: 2;
 @keyframes fadeIn11{
     0%{opacity: 0; transform: translateX(-750px);}
     100%{opacity: 1; transform: translateX(0);}
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+
+h3{
+position: absolute;
+    left: 10%; 
+    top: 50%;
+}
+h4{
+position: absolute;
+    left: 10%; 
+    top: 52%;
+}
+h5{
+    position: absolute;
+    left: 30%; 
+    top: 55%; 
+}
+
+
+h2{
+    text-align: left;
+    position: absolute;
+    top: 200%; 
+    right: 0; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color:  rgb(241, 214, 245);
+}
+
+
+.buttonPH{
+    top: 800%; 
+    right: 70%; 
+   
+}
+
+
+.description-box, .description-box5, .description-box6{
+    width: 430px; 
+    height: 350px;
+    max-width: 250px;
+    left: 10%; 
+    top: 30%; 
+
+}
+.description-box7{
+    width: 430px; 
+    height: 400px;
+    max-width: 250px;
+    left: 8%; 
+    top: 20%; 
+}
+
+
+
+.gallery-layout5{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0.5rem;
+    max-width: 900px;
+    margin-top: 80%;
+    position: relative;
+}
+.ButtonP5{
+display: block;
+background: none;
+border: none; 
+padding: 0; 
+margin: 0;
+cursor: pointer; 
+width: 300%;
+height: 100%;
+position: relative;
+z-index: 100;
+}
+.Piece5 img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+
+}
+.Piece5{
+    width: 200%;
+    max-width: 360px;
+    margin-right: 50%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.description-box5{
+    display: none;
+    width: 300px; 
+    height: 300px;
+    max-width: 800px;
+    top: 30%; 
+    left: 5%; 
+    z-index: 100;
+}
+
+
+@keyframes fadeIn5{
+    0%{opacity: 0; transform: translateX(0);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+
+
+
+.Piece6{
+    top: 2%; 
+    left: 20%; 
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    justify-self: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

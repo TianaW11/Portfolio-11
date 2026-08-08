@@ -10,14 +10,14 @@ body{
    
     background-color: #ffffff;
     transition: background-color 0.2s ease-in-out;
-    cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer;
+    cursor: url("../Elements/CursorDesignPort2.svg") 16 16, pointer;
 
 }
 .buttonGD, .buttonGD:hover, body:has(.buttonGD:hover),.buttonGD:active, .buttonTYPE, .buttonTYPE:hover, body:has(.buttonTYPE:hover),.buttonTYPE:active,
 .buttonPH, .buttonPH:hover,  body:has(.buttonPH:hover), .buttonPH:active,
 .buttonPT, .buttonPT:active, .buttonPT:hover, .button3D, .button3D:active, .button3D:hover, 
 .buttonMO, .buttonMO:active, .buttonMO:hover{
- cursor: url("../Elements/CursorDesignPort2.svg")  30 30 , auto !important;
+ cursor: url("../Elements/CursorDesignPort2.svg")  16 16 , auto !important;
 }
 
     

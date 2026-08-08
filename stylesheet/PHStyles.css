@@ -11,7 +11,7 @@ body,
 *, 
 *::before, 
 *::after{
-cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer !important;
+cursor: url("../Elements/CursorDesignPort2.svg") 16 16, pointer !important;
 }
 .Piece1 :hover, .Piece2 :hover, .Piece3 :hover, .Piece4 :hover, .Piece5 :hover, .Piece6 :hover{
     outline: solid 10px black;

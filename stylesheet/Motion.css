@@ -27,7 +27,7 @@ head,
 *, 
 *::before, 
 *::after{
-cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer !important;  
+cursor: url("../Elements/CursorDesignPort2.svg") 16 16, pointer !important;  
 }
 
 
@@ -146,7 +146,7 @@ video{
     top: 100%; 
      width: 50%;
     left: 1%; 
-    cursor: url("../Elements/CursorDesignPort2.svg") 30 30, auto !important;
+    cursor: url("../Elements/CursorDesignPort2.svg") 16 16, auto !important;
 }
 
 
@@ -154,7 +154,7 @@ video{
 position: absolute;
     top: 100%; 
     width: 100%;
-cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer !important;
+cursor: url("../Elements/CursorDesignPort2.svg") 16 16, pointer !important;
 }
 .ButtonP1{
 background-color: rgb(254, 173, 199);

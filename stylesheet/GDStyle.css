@@ -1,11 +1,11 @@
 body{
     background-color: lch(88.6% 22.6 65.12);
-     cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer;
+     cursor: url("../Elements/CursorDesignPort2.svg") 16 16, pointer;
 }
 html{
     -ms-overflow-style: none;
     scrollbar-width: none;
-    cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer;
+    cursor: url("../Elements/CursorDesignPort2.svg") 16 16, pointer;
 }
 
 html,
@@ -13,7 +13,7 @@ body,
 *, 
 *::before, 
 *::after{
-cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer !important;
+cursor: url("../Elements/CursorDesignPort2.svg") 16 16, pointer !important;
 }
 
 
@@ -633,21 +633,93 @@ z-index: 2;
 
 @media only screen and (max-width: 600px){
 
-h3,h4, h5{
-    position: relative;
-    right: 60%; 
-    top: 30%; 
+h3{
+position: absolute;
+    left: 10%; 
+    top: 50%;
+}
+h4{
+position: absolute;
+    left: 10%; 
+    top: 52%;
+}
+h5{
+    position: absolute;
+    left: 20%; 
+    top: 55%; 
 }
 
 h2{
     text-align: left;
     position: absolute;
-    top: 1000%; 
+    top: 600%; 
     right: 0; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
     color:  lch(88.6% 22.6 65.12);
 }
+
+
+
+.buttonTYPE{
+    top: 600%; 
+    right: 70%; 
+   
+}
+
+
+
+/*Everything is red*/
+.description-box, .description-box2, .description-box3, 
+.description-box4, .description-box5{
+    width: 430px; 
+    height: 350px;
+    max-width: 250px;
+    left: 10%; 
+
+}
+.description-box, .description-box6{
+    width: 430px; 
+    height: 200px;
+    max-width: 250px;
+    left: 10%; 
+}
+@keyframes fadeIn{
+    0%{opacity: 0; transform: translateX(0);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+@keyframes fadeIn2{
+    0%{opacity: 0; transform: translateX(0);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+@keyframes fadeIn3{
+    0%{opacity: 0; transform: translateX(0);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+@keyframes fadeIn4{
+    0%{opacity: 0; transform: translateX(0);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+@keyframes fadeIn5{
+    0%{opacity: 0; transform: translateX(0);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+@keyframes fadeIn6{
+    0%{opacity: 0; transform: translateX(0);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+@keyframes fadeIn7{
+    0%{opacity: 0; transform: translateX(0);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+
+
+
+
+
+
+
+
 
 
 

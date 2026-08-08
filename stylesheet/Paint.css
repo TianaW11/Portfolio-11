@@ -12,7 +12,7 @@ body,
 *, 
 *::before, 
 *::after{
-cursor: url("../Elements/CursorDesignPort2.svg") 30 30, pointer !important;
+cursor: url("../Elements/CursorDesignPort2.svg") 16 16, pointer !important;
 }
 
 .ButtonP1 :hover, .ButtonP2 :hover, .ButtonP3 :hover, .ButtonP4 :hover, .ButtonP5 :hover, .ButtonP6 :hover,  
